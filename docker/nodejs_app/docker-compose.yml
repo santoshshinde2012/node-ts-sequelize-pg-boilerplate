@@ -1,0 +1,23 @@
+# docker-compose.yml for node js application
+
+version: '3.8'
+
+services:
+   nodejs_app:
+    build:
+      context: .
+      dockerfile: ../../Dockerfile
+    container_name: nodejs_app
+    depends_on:
+      - db
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_USER: user1
+      DB_PASSWORD: user1@123
+      DB_NAME: database
+    ports:
+      - "8080:8080"
+
+volumes:
+  postgres_data:

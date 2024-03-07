@@ -1,0 +1,22 @@
+[
+    {
+        "id": "cc2fdd30-0b35-4fb6-9da3-40a46da3179c",
+        "name": "Santosh",
+        "country": "India",
+        "subject": "Demo",
+        "email": "sanshinde2012@gmail.com",
+        "body": "Waiting for demo",
+        "createdAt": "2024-03-07T18:17:19.305Z",
+        "updatedAt": "2024-03-07T18:17:19.305Z"
+    },
+    {
+        "id": "53e00a03-4f37-4392-a8c2-e3f24a68b34f",
+        "name": "Santosh",
+        "country": "India",
+        "subject": "Demo",
+        "email": "sanshinde2012@gmail.com",
+        "body": "Waiting for demo",
+        "createdAt": "2024-03-07T18:17:19.305Z",
+        "updatedAt": "2024-03-07T18:17:19.305Z"
+    }
+]

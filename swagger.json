@@ -1,0 +1,659 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "Node Typescript Boilerplate for Microservices. Skeleton for Node.js Apps written in TypeScript (with Setup Instructions for ESLint, Prettier, and Husky)",
+        "version": "1.0.0",
+        "title": "Node Boilerplate"
+    },
+    "host": "http://localhost:8080/api/v1",
+    "basePath": "",
+    "tags": [
+        {
+            "name": "node-boilerplate",
+            "description": "Node Typescript Boilerplate"
+        }
+    ],
+    "schemes": [
+        "http",
+        "https"
+    ],
+    "securityDefinitions": {},
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+		"/organizations": {
+			"get": {
+				"tags": [
+					"organizations"
+				],
+				"summary": "getAll",
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			},
+			"post": {
+				"tags": [
+					"organizations"
+				],
+				"summary": "create",
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"type": "object",
+								"example": {
+									"name": "Organization 1",
+									"country": "India"
+								}
+							}
+						}
+					}
+				},
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			}
+		},
+		"/organizations/{id}": {
+			"get": {
+                "parameters": {
+                    "name": "id",
+                    "required": true
+                },
+				"tags": [
+					"organizations"
+				],
+				"summary": "getById",
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			},
+			"put": {
+				"tags": [
+					"organizations"
+				],
+				"summary": "update",
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"type": "object",
+								"example": {
+									"name": "Organization 1",
+									"country": "France"
+								}
+							}
+						}
+					}
+				},
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			},
+			"delete": {
+				"tags": [
+					"organizations"
+				],
+				"summary": "delete",
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			}
+		},
+		"/organizations/7cf916b4-8d04-4235-b47a-47d82169d4f5/properties": {
+			"get": {
+				"tags": [
+					"organizations"
+				],
+				"summary": "getPropertiesByOrganizationId",
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			}
+		},
+		"/properties": {
+			"get": {
+				"tags": [
+					"properties"
+				],
+				"summary": "getAll",
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			},
+			"post": {
+				"tags": [
+					"properties"
+				],
+				"summary": "create",
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"type": "object",
+								"example": {
+									"name": "Organisation 3",
+									"country": "India"
+								}
+							}
+						}
+					}
+				},
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			}
+		},
+		"/properties/9c3b18be-e1f8-435e-b70c-f216dfdc312a": {
+			"get": {
+				"tags": [
+					"properties"
+				],
+				"summary": "getById",
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			}
+		},
+		"/properties/{id}": {
+			"put": {
+				"tags": [
+					"properties"
+				],
+				"summary": "update",
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"type": "object",
+								"example": {
+									"name": "Organisation 3",
+									"country": "France"
+								}
+							}
+						}
+					}
+				},
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			},
+			"delete": {
+				"tags": [
+					"properties"
+				],
+				"summary": "delete",
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			}
+		},
+		"/regions": {
+			"get": {
+				"tags": [
+					"regions"
+				],
+				"summary": "getAll",
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			},
+			"post": {
+				"tags": [
+					"regions"
+				],
+				"summary": "create",
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"type": "object",
+								"example": {
+									"name": "Organisation 3",
+									"country": "India"
+								}
+							}
+						}
+					}
+				},
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			}
+		},
+		"/regions/9c3b18be-e1f8-435e-b70c-f216dfdc312a": {
+			"get": {
+				"tags": [
+					"regions"
+				],
+				"summary": "getById",
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			}
+		},
+		"/regions/{id}": {
+			"put": {
+				"tags": [
+					"regions"
+				],
+				"summary": "update",
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"type": "object",
+								"example": {
+									"name": "Organisation 3",
+									"country": "France"
+								}
+							}
+						}
+					}
+				},
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			},
+			"delete": {
+				"tags": [
+					"regions"
+				],
+				"summary": "delete",
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			}
+		},
+		"/fields": {
+			"get": {
+				"tags": [
+					"fields"
+				],
+				"summary": "getAll",
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			},
+			"post": {
+				"tags": [
+					"fields"
+				],
+				"summary": "create",
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"type": "object",
+								"example": {
+									"name": "Organisation 3",
+									"country": "India"
+								}
+							}
+						}
+					}
+				},
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			}
+		},
+		"/fields/9c3b18be-e1f8-435e-b70c-f216dfdc312a": {
+			"get": {
+				"tags": [
+					"fields"
+				],
+				"summary": "getById",
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			}
+		},
+		"/fields/{id}": {
+			"put": {
+				"tags": [
+					"fields"
+				],
+				"summary": "update",
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"type": "object",
+								"example": {
+									"name": "Organisation 3",
+									"country": "France"
+								}
+							}
+						}
+					}
+				},
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			},
+			"delete": {
+				"tags": [
+					"fields"
+				],
+				"summary": "delete",
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			}
+		},
+		"/crops": {
+			"get": {
+				"tags": [
+					"crops"
+				],
+				"summary": "getAll",
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			},
+			"post": {
+				"tags": [
+					"crops"
+				],
+				"summary": "create",
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"type": "object",
+								"example": {
+									"name": "Organisation 3",
+									"country": "India"
+								}
+							}
+						}
+					}
+				},
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			}
+		},
+		"/crops/9c3b18be-e1f8-435e-b70c-f216dfdc312a": {
+			"get": {
+				"tags": [
+					"crops"
+				],
+				"summary": "getById",
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			}
+		},
+		"/crops/{id}": {
+			"put": {
+				"tags": [
+					"crops"
+				],
+				"summary": "update",
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"type": "object",
+								"example": {
+									"name": "Organisation 3",
+									"country": "France"
+								}
+							}
+						}
+					}
+				},
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			},
+			"delete": {
+				"tags": [
+					"crops"
+				],
+				"summary": "delete",
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			}
+		},
+		"/crop-cycles": {
+			"get": {
+				"tags": [
+					"crop-cycles"
+				],
+				"summary": "getAll",
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			},
+			"post": {
+				"tags": [
+					"crop-cycles"
+				],
+				"summary": "create",
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"type": "object",
+								"example": {
+									"name": "Organisation 3",
+									"country": "India"
+								}
+							}
+						}
+					}
+				},
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			}
+		},
+		"/crop-cycles/9c3b18be-e1f8-435e-b70c-f216dfdc312a": {
+			"get": {
+				"tags": [
+					"crop-cycles"
+				],
+				"summary": "getById",
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			}
+		},
+		"/crop-cycles/{id}": {
+			"put": {
+				"tags": [
+					"crop-cycles"
+				],
+				"summary": "update",
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"type": "object",
+								"example": {
+									"name": "Organisation 3",
+									"country": "France"
+								}
+							}
+						}
+					}
+				},
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			},
+			"delete": {
+				"tags": [
+					"crop-cycles"
+				],
+				"summary": "delete",
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			}
+		}
+	},
+    "externalDocs": {
+        "description": "Find out more about Node Typescript Boilerplate"
+    }
+}
