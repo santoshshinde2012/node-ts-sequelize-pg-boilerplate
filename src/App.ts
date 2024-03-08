@@ -1,5 +1,5 @@
 import cors from 'cors';
-import express, { Application, Request, Response, NextFunction } from 'express';
+import express, { Application, Request, Response } from 'express';
 import http from 'http';
 import helmet from 'helmet';
 import 'dotenv/config';
