@@ -47,7 +47,7 @@
 
 - Database
     - Created a Models folder to place the database model, and it is based on sequelize.
-    - Extracted config from the.env variable and exported from the `index.ts` file
+    - Extracted config from the .env variable and exported from the `index.ts` file
 - Components
     - Components are divided into two parts: `Controller` and `Service`.
     - The service is responsible for communicating with the respective database model.
@@ -60,5 +60,5 @@
     - Created unit test cases using Jest with 90+ code coverage.
     - Tried to cover positive and negative scenerio
     - Code Coverage Report
-    - Sonar Cloud Scan [nodejs-assessment](https://sonarcloud.io/summary/overall?id=santoshshinde2012_nodejs-assessment)
+    - Sonar Cloud Scan [nodejs-assessment](https://sonarcloud.io/project/configuration/GitHubActions?id=santoshshinde2012_node-ts-sequelize-pg-boilerplate)
       ![ Sonar Cloud Scan Report](./assets/sonar.png)
