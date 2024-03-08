@@ -49,7 +49,6 @@ export default class App {
 			this.parseRequestHeader,
 			this.basePathRoute,
 		);
-		this.express.get('/logout', this.logout);
 	}
 
 	/**
@@ -105,19 +104,5 @@ export default class App {
 			swaggerUi.serve,
 			swaggerUi.setup(swaggerDocument),
 		);
-	}
-
-	private logout(
-		request: Request,
-		response: Response,
-		_next: NextFunction,
-	): void {
-		try {
-			request.logout((error) => logger.error(error));
-			response.redirect('/login/github');
-		} catch (error) {
-			logger.error('Error during logout:', error);
-			response.status(500).send('Error during logout');
-		}
 	}
 }
