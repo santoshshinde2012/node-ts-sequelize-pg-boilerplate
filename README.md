@@ -11,7 +11,6 @@ Skeleton for Node.js applications written in TypeScript with Sequelize ORM
 - [x] `typescript`
 - [x] `dotenv`
 - [x] `cors`
-- [x] `sequelize mysql2`
 - [x] `helmet`
 - [x] `http-status-codes`
 - [x] `winston`, `@types/winston`
