@@ -1,4 +1,4 @@
-import { ReasonPhrases, StatusCodes } from "http-status-codes";
+import { ReasonPhrases, StatusCodes } from 'http-status-codes';
 
 export interface IError {
 	status: number;
@@ -22,10 +22,7 @@ class ApiError extends Error implements IError {
 		super();
 		this.message = msg;
 		this.status = statusCode;
-		if(statusCode === StatusCodes.NOT_FOUND) {
-			name = ReasonPhrases.NOT_FOUND;
-		}
-		this.name = name;
+		this.name = statusCode === StatusCodes.NOT_FOUND ? ReasonPhrases.NOT_FOUND : name;
 	}
 }
 

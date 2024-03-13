@@ -5,7 +5,7 @@ const { database, user, password, host, dbLogging } = connection;
 
 const sequelizeConnection = new Sequelize(database, user, password, {
 	host,
-	logging: false,
+	logging: dbLogging,
 	dialect: 'postgres' as Dialect,
 });
 
