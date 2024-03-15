@@ -2,7 +2,7 @@
 
 Skeleton for Node.js applications written in TypeScript with Sequelize ORM
 
-![Introductions](https://i.ibb.co/VHTZKB6/introductions.png)
+![Introductions](https://i.ibb.co/5TxwNsm/nodejs-pg.png)
 
 ## Core NPM Module
 
