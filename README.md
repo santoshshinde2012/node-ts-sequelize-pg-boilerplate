@@ -38,6 +38,9 @@ Skeleton for Node.js applications written in TypeScript with Sequelize ORM
 
 ## Project Structure
 
+![Project Structure](https://i.ibb.co/X8cfSVX/Boilerplate-folder-structure.png)
+
+
 | Name                              | Description |
 | --------------------------------- | ----------- |
 | **docker/**                       | Docker related config for postgresql db     |
@@ -53,6 +56,9 @@ Skeleton for Node.js applications written in TypeScript with Sequelize ORM
 | **tests/helpers/**                | Helpers for test cases will be placed here  |
 | **tests/unit-tests/**             | Unit Test cases will be placed here  |
 | **tests/integration-tests/**      | API routes (Integration) Test cases will be placed here|
+
+
+
 
 ## Postman Collections
 
