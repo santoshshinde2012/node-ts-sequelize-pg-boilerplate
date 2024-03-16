@@ -3,12 +3,12 @@ CREATE EXTENSION IF NOT EXISTS postgis;
 
 -- Create Table
 CREATE TABLE Enquiry (
-    id CHAR(36) PRIMARY KEY,
-    name VARCHAR(100) NOT NULL,
-    country VARCHAR(100) NOT NULL,
-    subject VARCHAR(200) NOT NULL,
-    email VARCHAR(100) NOT NULL,
-    body VARCHAR(400) NOT NULL,
+    id VARCHAR2(36) PRIMARY KEY,
+    name VARCHAR2(100) NOT NULL,
+    country VARCHAR2(100) NOT NULL,
+    subject VARCHAR2(200) NOT NULL,
+    email VARCHAR2(100) NOT NULL,
+    body VARCHAR2(400) NOT NULL,
     createdAt TIMESTAMP,
     updatedAt TIMESTAMP
 );
