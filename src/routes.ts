@@ -10,10 +10,7 @@ export default function registerRoutes(): Router {
 	const router = Router();
 
 	// Define an array of controller objects
-	const controllers = [
-		new SystemStatusController(),
-		new EnquiryController(),
-	];
+	const controllers = [new SystemStatusController(), new EnquiryController()];
 
 	// Dynamically register routes for each controller
 	controllers.forEach((controller) => {

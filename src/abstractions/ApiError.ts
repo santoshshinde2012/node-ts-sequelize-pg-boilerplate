@@ -18,11 +18,18 @@ class ApiError extends Error implements IError {
 
 	public fields: { name: { message: string } };
 
-	constructor(msg: string, statusCode: number, name: string = ReasonPhrases.INTERNAL_SERVER_ERROR) {
+	constructor(
+		msg: string,
+		statusCode: number,
+		name: string = ReasonPhrases.INTERNAL_SERVER_ERROR,
+	) {
 		super();
 		this.message = msg;
 		this.status = statusCode;
-		this.name = statusCode === StatusCodes.NOT_FOUND ? ReasonPhrases.NOT_FOUND : name;
+		this.name =
+			statusCode === StatusCodes.NOT_FOUND
+				? ReasonPhrases.NOT_FOUND
+				: name;
 	}
 }
 

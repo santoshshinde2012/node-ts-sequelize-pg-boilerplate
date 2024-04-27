@@ -22,7 +22,6 @@ export default class App {
 		// Assert database connection
 		await this.assertDatabaseConnection();
 
-
 		// add all global middleware like cors
 		this.middleware();
 
@@ -44,11 +43,7 @@ export default class App {
 	private routes(): void {
 		this.express.get('/', this.basePathRoute);
 		this.express.use('/api', registerRoutes());
-		this.express.get(
-			'/web',
-			this.parseRequestHeader,
-			this.basePathRoute,
-		);
+		this.express.get('/web', this.parseRequestHeader, this.basePathRoute);
 	}
 
 	/**

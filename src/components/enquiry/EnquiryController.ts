@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response, Router } from 'express';
 import { ReasonPhrases, StatusCodes } from 'http-status-codes';
-import BaseApi from '../BaseApi';
+import BaseController from '../BaseController';
 import { EnquiryService } from './EnquiryService';
 import { EnquiryAttributes } from '../../database/models/Enquiry';
 import ApiError from '../../abstractions/ApiError';
@@ -8,7 +8,7 @@ import ApiError from '../../abstractions/ApiError';
 /**
  * Enquiry controller
  */
-export default class EnquiryController extends BaseApi {
+export default class EnquiryController extends BaseController {
 	private enquiry: EnquiryService;
 	public basePath: string = 'enquiries';
 
@@ -41,8 +41,7 @@ export default class EnquiryController extends BaseApi {
 		next: NextFunction,
 	): Promise<void> {
 		try {
-			const enquiries: EnquiryAttributes[] =
-				await this.enquiry.getAll();
+			const enquiries: EnquiryAttributes[] = await this.enquiry.getAll();
 			res.locals.data = enquiries;
 			// call base class method
 			this.send(res);
@@ -64,8 +63,7 @@ export default class EnquiryController extends BaseApi {
 	): Promise<void> {
 		try {
 			const id = req.params.id;
-			const enquiry: EnquiryAttributes =
-				await this.enquiry.getById(id);
+			const enquiry: EnquiryAttributes = await this.enquiry.getById(id);
 			res.locals.data = enquiry;
 			// call base class method
 			this.send(res);
@@ -88,8 +86,10 @@ export default class EnquiryController extends BaseApi {
 		try {
 			const id = req.params.id;
 			const { body } = req;
-			const enquiry: EnquiryAttributes =
-				await this.enquiry.update(id, body);
+			const enquiry: EnquiryAttributes = await this.enquiry.update(
+				id,
+				body,
+			);
 			res.locals.data = {
 				enquiry,
 			};
@@ -119,8 +119,13 @@ export default class EnquiryController extends BaseApi {
 					StatusCodes.BAD_REQUEST,
 				);
 			}
-			const enquiry: EnquiryAttributes =
-				await this.enquiry.create({ name, country, subject, body, email });
+			const enquiry: EnquiryAttributes = await this.enquiry.create({
+				name,
+				country,
+				subject,
+				body,
+				email,
+			});
 			res.locals.data = {
 				enquiry,
 			};

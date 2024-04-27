@@ -4,7 +4,7 @@ import { StatusCodes } from 'http-status-codes';
 /**
  * Provides services common to all API methods
  */
-export default abstract class BaseApi {
+export default abstract class BaseController {
 	protected router: Router;
 
 	constructor() {

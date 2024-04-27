@@ -10,8 +10,7 @@ interface EnquiryAttributes {
 	country: string;
 }
 
-interface EnquiryCreationAttributes
-	extends Optional<EnquiryAttributes, 'id'> {}
+interface EnquiryCreationAttributes extends Optional<EnquiryAttributes, 'id'> {}
 
 class Enquiry
 	extends Model<EnquiryAttributes, EnquiryCreationAttributes>
@@ -54,7 +53,7 @@ Enquiry.init(
 		body: {
 			type: DataTypes.STRING(400),
 			allowNull: false,
-		}
+		},
 	},
 	{
 		sequelize,

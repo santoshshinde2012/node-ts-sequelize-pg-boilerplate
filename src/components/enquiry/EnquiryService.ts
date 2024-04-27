@@ -8,7 +8,6 @@ import ApiError from '../../abstractions/ApiError';
 import { StatusCodes } from 'http-status-codes';
 
 export class EnquiryService {
-
 	async getAll(): Promise<EnquiryAttributes[]> {
 		try {
 			const enquiries = await Enquiry.findAll();
@@ -39,10 +38,7 @@ export class EnquiryService {
 		try {
 			const enquiry = await Enquiry.findByPk(id);
 			if (!enquiry) {
-				throw new ApiError(
-					'Enquiry not found',
-					StatusCodes.NOT_FOUND,
-				);
+				throw new ApiError('Enquiry not found', StatusCodes.NOT_FOUND);
 			}
 			const updatedEnquiry = await enquiry.update(payload);
 			return updatedEnquiry;
