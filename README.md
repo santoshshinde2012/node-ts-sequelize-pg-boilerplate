@@ -91,4 +91,7 @@ The swagger documentation is available at the following url `${host}/docs`:
    <a href="https://blog.santoshshinde.com/">
     <img src="https://img.shields.io/badge/Blog-black?style=for-the-badge&logo=medium&logoColor=white" alt="Medium Badge"/>
   </a>
+  <a href="https://www.buymeacoffee.com/santoshshin" target="_blank">
+   <img src="https://img.shields.io/badge/buymeacoffee-black?style=for-the-badge&logo=buymeacoffee&logoColor=white" alt="Buy Me A Coffee"/>
+  </a>
 </div>
