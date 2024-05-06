@@ -5,6 +5,7 @@ import enquiries from '../../data/enquiry.json';
 import { EnquiryAttributes } from '../../../../src/database/models/Enquiry';
 import { ReasonPhrases, StatusCodes } from 'http-status-codes';
 import ApiError from '../../../../src/abstractions/ApiError';
+import { RouteDefinition } from '../../../../src/types/RouteDefinition';
 
 describe('Enquiry Controller', () => {
     let request: Partial<Request>;
@@ -29,9 +30,10 @@ describe('Enquiry Controller', () => {
         jest.clearAllMocks();
     });
 
-    it('should register routes and return router', () => {
-        const router: Router = controller.register();
-        expect(router).toBeTruthy();
+    it('should defined routes and return array of route definition', () => {
+        const routes: RouteDefinition[] = controller.routes();
+        expect(routes).toBeDefined();
+        expect(routes.length).toBeGreaterThan(0);
     });
 
     it('should get all enquiries', async () => {
