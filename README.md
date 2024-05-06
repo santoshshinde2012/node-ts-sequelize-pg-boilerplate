@@ -1,8 +1,45 @@
-# [Node-TS-Sequelize-pg-Boilerplate](https://blog.santoshshinde.com/skeleton-for-node-js-apps-written-in-typescript-444fa1695b30)  [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=santoshshinde2012_node-ts-sequelize-pg-boilerplate&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=santoshshinde2012_node-ts-sequelize-pg-boilerplate)![Github action workflow status](https://github.com/santoshshinde2012/node-ts-sequelize-pg-boilerplate/actions/workflows/node.js.yml/badge.svg?branch=main)![CodeQL](https://github.com/santoshshinde2012/node-ts-sequelize-pg-boilerplate/actions/workflows/codeql-analysis.yml/badge.svg?branch=main)![njsscan Analysis](https://github.com/santoshshinde2012/node-ts-sequelize-pg-boilerplate/actions/workflows/njsscan.yml/badge.svg?branch=main)
+# [Node-TS-Sequelize-pg-Boilerplate](https://blog.santoshshinde.com/skeleton-for-node-js-apps-written-in-typescript-444fa1695b30)  [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=santoshshinde2012_node-ts-sequelize-pg-boilerplate&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=santoshshinde2012_node-ts-sequelize-pg-boilerplate)![Github action workflow status](https://github.com/santoshshinde2012/node-ts-sequelize-pg-boilerplate/actions/workflows/node.js.yml/badge.svg?branch=main)![CodeQL](https://github.com/santoshshinde2012/node-ts-sequelize-pg-boilerplate/actions/workflows/codeql-analysis.yml/badge.svg?branch=main)![njsscan Analysis](https://github.com/santoshshinde2012/node-ts-sequelize-pg-boilerplate/actions/workflows/njsscan.yml/badge.svg?branch=main)![Maintainability](https://api.codeclimate.com/v1/badges/ad13a11cffa2421a8220/maintainability)![Test Coverage](https://api.codeclimate.com/v1/badges/ad13a11cffa2421a8220/test_coverage)
 
 Skeleton for Node.js applications written in TypeScript with Sequelize ORM
 
 ![Introductions](https://i.ibb.co/jznhfjw/nodejs-pg.png)
+
+## Common Features
+
+- Quick start
+    - Simple and Standard scaffolding
+    - Based on Typescript Syntax
+    - Simple & Global Enviroment Configuration
+    - Global Error & Response Handler
+    - Easily Add new feature
+
+- Contiuous Integration
+    - Added Github Action Workflow
+        - [sonarcloud.io](https://sonarcloud.io/summary/new_code?id=santoshshinde2012_node-boilerplate)
+        - [snyk.io](https://app.snyk.io/org/santoshshinde2012/project/ab175098-8886-4b72-bb5f-dce28d098fc0)
+        - [CodeQL](https://codeql.github.com/)
+        - [njsscan](https://opensecurity.in/#engineering) is a static application testing (SAST) tool that can find insecure code patterns in your node.js applications
+        - [Codeclimate](https://codeclimate.com/)
+          - <a href="https://codeclimate.com/github/santoshshinde2012/node-boilerplate/maintainability"><img src="https://api.codeclimate.com/v1/badges/ad13a11cffa2421a8220/maintainability" /></a>
+          - <a href="https://codeclimate.com/github/santoshshinde2012/node-boilerplate/test_coverage"><img src="https://api.codeclimate.com/v1/badges/ad13a11cffa2421a8220/test_coverage" /></a>
+
+- Documentation Standards
+    - Swagger Documentation Support
+    - Postman Collections
+    - Readme with instructions
+
+- Test Coverage Maintenance
+    - Integrated eslint, prettier and husky
+    - Added Unit Test cases and Intgration Test Cases
+    - 80% + Code Coverage
+  
+- Codeclimate Integration with Github action workflow
+
+- Prodcution Ready Setup 
+    - Follwed Production Ready Best Practices: Security
+    - Integrated winston Logger
+    - Added only used npm modules
+  
 
 ## Core NPM Module
 
