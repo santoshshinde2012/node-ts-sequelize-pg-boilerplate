@@ -15,13 +15,13 @@ Skeleton for Node.js applications written in TypeScript with Sequelize ORM
 
 - Contiuous Integration
     - Added Github Action Workflow
-        - [sonarcloud.io](https://sonarcloud.io/summary/new_code?id=santoshshinde2012_node-boilerplate)
+        - [sonarcloud.io](https://sonarcloud.io/summary/new_code?id=santoshshinde2012_node-ts-sequelize-pg-boilerplate)
         - [snyk.io](https://app.snyk.io/org/santoshshinde2012/project/ab175098-8886-4b72-bb5f-dce28d098fc0)
         - [CodeQL](https://codeql.github.com/)
         - [njsscan](https://opensecurity.in/#engineering) is a static application testing (SAST) tool that can find insecure code patterns in your node.js applications
         - [Codeclimate](https://codeclimate.com/)
-          - <a href="https://codeclimate.com/github/santoshshinde2012/node-boilerplate/maintainability"><img src="https://api.codeclimate.com/v1/badges/ad13a11cffa2421a8220/maintainability" /></a>
-          - <a href="https://codeclimate.com/github/santoshshinde2012/node-boilerplate/test_coverage"><img src="https://api.codeclimate.com/v1/badges/ad13a11cffa2421a8220/test_coverage" /></a>
+          - <a href="https://codeclimate.com/github/santoshshinde2012/node-ts-sequelize-pg-boilerplate/maintainability"><img src="https://api.codeclimate.com/v1/badges/ad13a11cffa2421a8220/maintainability" /></a>
+          - <a href="https://codeclimate.com/github/santoshshinde2012/node-ts-sequelize-pg-boilerplate/test_coverage"><img src="https://api.codeclimate.com/v1/badges/ad13a11cffa2421a8220/test_coverage" /></a>
 
 - Documentation Standards
     - Swagger Documentation Support
