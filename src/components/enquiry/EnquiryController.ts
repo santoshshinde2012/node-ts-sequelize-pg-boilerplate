@@ -4,6 +4,7 @@ import BaseController from '../BaseController';
 import { EnquiryService } from './EnquiryService';
 import { EnquiryAttributes } from '../../database/models/Enquiry';
 import ApiError from '../../abstractions/ApiError';
+import { RouteDefinition } from '../../types/RouteDefinition';
 
 /**
  * Enquiry controller
@@ -20,13 +21,14 @@ export default class EnquiryController extends BaseController {
 	/**
 	 *
 	 */
-	public register(): Router {
-		this.router.get('/', this.getEnquiries.bind(this));
-		this.router.get('/:id', this.getEnquiry.bind(this));
-		this.router.post('/', this.createEnquiry.bind(this));
-		this.router.put('/:id', this.updateEnquiry.bind(this));
-		this.router.delete('/:id', this.delete.bind(this));
-		return this.router;
+	public routes(): RouteDefinition[] {
+		return [
+			{ path: '/', method: 'get', handler: this.getEnquiries.bind(this) },
+			{ path: '/:id', method: 'get', handler: this.getEnquiry.bind(this) },
+			{ path: '/', method: 'post', handler: this.createEnquiry.bind(this) },
+			{ path: '/:id', method: 'put', handler: this.updateEnquiry.bind(this) },
+			{ path: '/:id', method: 'delete', handler: this.delete.bind(this) }
+		];
 	}
 
 	/**

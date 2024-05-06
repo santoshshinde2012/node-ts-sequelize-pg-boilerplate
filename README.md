@@ -15,7 +15,7 @@ Skeleton for Node.js applications written in TypeScript with Sequelize ORM
 
 - Contiuous Integration
     - Added Github Action Workflow
-        - [sonarcloud.io](https://sonarcloud.io/summary/new_code?id=santoshshinde2012_node-boilerplate)
+        - [sonarcloud.io](https://sonarcloud.io/summary/new_code?id=santoshshinde2012_node-ts-sequelize-pg-boilerplate)
         - [snyk.io](https://app.snyk.io/org/santoshshinde2012/project/ab175098-8886-4b72-bb5f-dce28d098fc0)
         - [CodeQL](https://codeql.github.com/)
         - [njsscan](https://opensecurity.in/#engineering) is a static application testing (SAST) tool that can find insecure code patterns in your node.js applications
