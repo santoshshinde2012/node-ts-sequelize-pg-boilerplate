@@ -20,8 +20,8 @@ Skeleton for Node.js applications written in TypeScript with Sequelize ORM
         - [CodeQL](https://codeql.github.com/)
         - [njsscan](https://opensecurity.in/#engineering) is a static application testing (SAST) tool that can find insecure code patterns in your node.js applications
         - [Codeclimate](https://codeclimate.com/)
-          - <a href="https://codeclimate.com/github/santoshshinde2012/node-boilerplate/maintainability"><img src="https://api.codeclimate.com/v1/badges/ad13a11cffa2421a8220/maintainability" /></a>
-          - <a href="https://codeclimate.com/github/santoshshinde2012/node-boilerplate/test_coverage"><img src="https://api.codeclimate.com/v1/badges/ad13a11cffa2421a8220/test_coverage" /></a>
+          - <a href="https://codeclimate.com/github/santoshshinde2012/node-ts-sequelize-pg-boilerplate/maintainability"><img src="https://api.codeclimate.com/v1/badges/ad13a11cffa2421a8220/maintainability" /></a>
+          - <a href="https://codeclimate.com/github/santoshshinde2012/node-ts-sequelize-pg-boilerplate/test_coverage"><img src="https://api.codeclimate.com/v1/badges/ad13a11cffa2421a8220/test_coverage" /></a>
 
 - Documentation Standards
     - Swagger Documentation Support
