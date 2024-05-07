@@ -1,4 +1,4 @@
-import { NextFunction, Request, Response, Router } from 'express';
+import { NextFunction, Request, Response } from 'express';
 import { ReasonPhrases, StatusCodes } from 'http-status-codes';
 import BaseController from '../BaseController';
 import { EnquiryService } from './EnquiryService';
@@ -19,7 +19,9 @@ export default class EnquiryController extends BaseController {
 	}
 
 	/**
-	 *
+	 * The routes method returns an array of route definitions for CRUD operations 
+	 * (GET, POST, PUT, DELETE) on enquiries, 
+	 * with corresponding handlers bound to the controller instance.
 	 */
 	public routes(): RouteDefinition[] {
 		return [
