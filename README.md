@@ -7,11 +7,9 @@ Node boilerplate with secure code analysis and quality checks: **NodeSeQ** is a 
 ## Common Features
 
 - Quick start
-    - Simple and Standard scaffolding
-    - Based on Typescript Syntax
-    - Simple & Global Enviroment Configuration
-    - Global Error & Response Handler
-    - Easily Add new feature
+    - Simple scaffolding based on Typescript syntax
+    - Easy global environment configuration and error handling
+    - Flexible for adding new features
 
 - Contiuous Integration
     - Added Github Action Workflow
@@ -24,21 +22,15 @@ Node boilerplate with secure code analysis and quality checks: **NodeSeQ** is a 
           - <a href="https://codeclimate.com/github/santoshshinde2012/node-ts-sequelize-pg-boilerplate/test_coverage"><img src="https://api.codeclimate.com/v1/badges/ad13a11cffa2421a8220/test_coverage" /></a>
 
 - Documentation Standards
-    - Swagger Documentation Support
-    - Postman Collections
-    - Readme with instructions
+    - Swagger documentation support and Postman collections
+    - Clear instructions in the readme file
 
 - Test Coverage Maintenance
-    - Integrated eslint, prettier and husky
-    - Added Unit Test cases and Intgration Test Cases
-    - 80% + Code Coverage
-  
-- Codeclimate Integration with Github action workflow
+    - Comprehensive test coverage with eslint, prettier, and husky integration
 
-- Prodcution Ready Setup 
-    - Follwed Production Ready Best Practices: Security
-    - Integrated winston Logger
-    - Added only used npm modules
+- Production Ready Setup 
+    - Followed best practices for security and efficiency
+    - Integrated Winston Logger and included only necessary npm modules
   
 
 ## Core NPM Module
@@ -75,7 +67,7 @@ Node boilerplate with secure code analysis and quality checks: **NodeSeQ** is a 
 
 ## Project Structure
 
-![Project Structure](https://i.ibb.co/X8cfSVX/Boilerplate-folder-structure.png)
+![Project Structure](https://i.ibb.co/Cvff1zN/boilerplate.png)
 
 
 | Name                              | Description |
@@ -109,6 +101,7 @@ The swagger documentation is available at the following url `${host}/docs`:
 
 
 ## Refrences 
+- [How to Use Sequelize with TypeScript, Node.js, and PostgreSQL](https://blog.santoshshinde.com/how-to-use-sequelize-with-typescript-node-js-and-postgresql-c6ff58a3af76)
 - [Skeleton for Node.js Apps written in TypeScript (with Setup Instructions for ESLint, Prettier, and Husky)](https://blog.santoshshinde.com/skeleton-for-node-js-apps-written-in-typescript-444fa1695b30)
 - [Global Error and Response Handler in Node JS with Express and Typescript](https://blog.santoshshinde.com/global-error-and-response-handler-in-node-js-with-express-and-typescript-913ec06d74b3)
 - [Testing with Jest in TypeScript and Node.js for Beginners](https://blog.santoshshinde.com/beginners-guide-to-testing-jest-with-node-typescript-1f46a1b87dad)
