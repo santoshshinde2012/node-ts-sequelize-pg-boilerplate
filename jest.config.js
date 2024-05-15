@@ -1,4 +1,5 @@
 module.exports = {
+  verbose: true,
   preset: 'ts-jest',
   roots: [
     "./tests"
@@ -9,6 +10,7 @@ module.exports = {
   ],
   collectCoverage: true,
   testEnvironment: 'node',
-  reporters: ['default',  'jest-to-sonar'],
-  setupFiles: ['dotenv/config'],
+  reporters: ['default', ['jest-to-sonar', {
+    outputFile: './coverage/sonar-report.xml',
+  }]],
 };

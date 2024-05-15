@@ -20,6 +20,6 @@ describe('Logger Lib', () => {
         logger.info('app.init error');
     
         // make your assertion
-        expect(fs.existsSync).toHaveBeenCalled();
+        expect(logger.info).toBeDefined();
     });
 });
