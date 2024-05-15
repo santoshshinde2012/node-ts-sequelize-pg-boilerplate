@@ -40,8 +40,21 @@ jobs:
       uses: SonarSource/sonarcloud-github-action@master
       with: 
         args: >
+          -Dsonar.host.url=https://sonarcloud.io
+          -Dsonar.organization=santoshshinde2012
+          -Dsonar.projectKey=santoshshinde2012_node-ts-sequelize-pg-boilerplate
+          -Dsonar.projectName=node-ts-sequelize-pg-boilerplate
+          -Dsonar.projectVersion=1.0
+          -Dsonar.sources=.
+          -Dsonar.exclusions=**/tests/**/*.ts
+          -Dsonar.test.inclusions=**/tests/**/*.ts
+          -Dsonar.coverage.exclusions=**/tests/**/*.ts,/**/src/server.ts,node_modules/*,coverage/lcov-report/*
+          -Dsonar.language=ts
+          -Dsonar.tests=./tests
+          -Dsonar.verbose=true
+          -Dsonar.sourceEncoding=UTF-8
           -Dsonar.javascript.lcov.reportPaths=${{github.workspace}}/coverage/lcov.info 
-          -Dsonar.javascript.lcov.reportPaths=${{github.workspace}}/sonar-report.xml
+          -Dsonar.testExecutionReportPaths=${{github.workspace}}/sonar-report.xml
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
