@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="/tests/unit-tests/components/system-status/SystemStatusController.spec.ts">
-    <testCase name="System Status Controller test getError method" duration="0.004">
+    <testCase name="System Status Controller test getError method" duration="0.003">
     </testCase>
-    <testCase name="System Status Controller test getSystemInfo method" duration="0.003">
+    <testCase name="System Status Controller test getSystemInfo method" duration="0.004">
     </testCase>
     <testCase name="System Status Controller test getServerTime method" duration="0.001">
     </testCase>
-    <testCase name="System Status Controller test getResourceUsage method" duration="0.001">
+    <testCase name="System Status Controller test getResourceUsage method" duration="0">
     </testCase>
-    <testCase name="System Status Controller test getProcessInfo method" duration="0">
+    <testCase name="System Status Controller test getProcessInfo method" duration="0.001">
     </testCase>
   </file>
   <file path="/tests/unit-tests/middleware/error-handler.spec.ts">
@@ -17,31 +17,31 @@
     </testCase>
     <testCase name="ErrorHandler middleware with 200 status code" duration="0">
     </testCase>
-    <testCase name="ErrorHandler middleware with 200 status code" duration="0">
+    <testCase name="ErrorHandler middleware with 200 status code" duration="0.001">
     </testCase>
-    <testCase name="ErrorHandler middleware with 200 status code and updated env variables" duration="0.001">
+    <testCase name="ErrorHandler middleware with 200 status code and updated env variables" duration="0">
     </testCase>
   </file>
   <file path="/tests/unit-tests/lib/logger.spec.ts">
-    <testCase name="Logger Lib should create a new log directory if one doesn't already exist" duration="0.008">
+    <testCase name="Logger Lib should create a new log directory if one doesn't already exist" duration="0.01">
     </testCase>
   </file>
   <file path="/tests/unit-tests/components/enquiry/EnquiryController.spec.ts">
-    <testCase name="Enquiry Controller should defined routes and return array of route definition" duration="0.004">
+    <testCase name="Enquiry Controller should defined routes and return array of route definition" duration="0.002">
     </testCase>
-    <testCase name="Enquiry Controller should get all enquiries" duration="0.001">
+    <testCase name="Enquiry Controller should get all enquiries" duration="0">
     </testCase>
-    <testCase name="Enquiry Controller should handle errors to get all enquiries" duration="0">
+    <testCase name="Enquiry Controller should handle errors to get all enquiries" duration="0.002">
     </testCase>
-    <testCase name="Enquiry Controller should get details of a specific enquiry" duration="0.001">
+    <testCase name="Enquiry Controller should get details of a specific enquiry" duration="0">
     </testCase>
     <testCase name="Enquiry Controller should handle errors to get all enquiries" duration="0.001">
     </testCase>
-    <testCase name="Enquiry Controller should create enquiry" duration="0.001">
+    <testCase name="Enquiry Controller should create enquiry" duration="0">
     </testCase>
     <testCase name="Enquiry Controller should throw BAD_REQUEST error if name and country are not provided" duration="0">
     </testCase>
-    <testCase name="Enquiry Controller should handle errors in create enquiry" duration="0.001">
+    <testCase name="Enquiry Controller should handle errors in create enquiry" duration="0">
     </testCase>
     <testCase name="Enquiry Controller should update enquiry" duration="0">
     </testCase>
@@ -53,17 +53,17 @@
     </testCase>
   </file>
   <file path="/tests/unit-tests/components/enquiry/EnquiryService.spec.ts">
-    <testCase name="EnquiryService should return all enquiries" duration="0.007">
+    <testCase name="EnquiryService should return all enquiries" duration="0.003">
     </testCase>
-    <testCase name="EnquiryService should throw error if failed to fetch enquiries" duration="0.006">
+    <testCase name="EnquiryService should throw error if failed to fetch enquiries" duration="0.005">
     </testCase>
-    <testCase name="EnquiryService should return particular enquiry by id" duration="0">
+    <testCase name="EnquiryService should return particular enquiry by id" duration="0.001">
     </testCase>
     <testCase name="EnquiryService should throw error if failed to fetch empty enquiry by id" duration="0.002">
     </testCase>
     <testCase name="EnquiryService should throw error if failed to fetch enquiry by id" duration="0">
     </testCase>
-    <testCase name="EnquiryService should update enquiry with valid input" duration="0">
+    <testCase name="EnquiryService should update enquiry with valid input" duration="0.001">
     </testCase>
     <testCase name="EnquiryService should throw an error if it fails to update as it failed to find the enquiry by id" duration="0">
     </testCase>
@@ -75,13 +75,13 @@
     </testCase>
     <testCase name="EnquiryService should return true if enquiry is deleted successfully" duration="0">
     </testCase>
-    <testCase name="EnquiryService should return false if no enquiry is deleted" duration="0.001">
+    <testCase name="EnquiryService should return false if no enquiry is deleted" duration="0">
     </testCase>
-    <testCase name="EnquiryService should throw error if failed to delete enquiry" duration="0">
+    <testCase name="EnquiryService should throw error if failed to delete enquiry" duration="0.001">
     </testCase>
   </file>
   <file path="/tests/integration-tests/app.integration.spec.ts">
-    <testCase name="status integration tests can get default route success" duration="0.011">
+    <testCase name="status integration tests can get default route success" duration="0.013">
     </testCase>
     <testCase name="status integration tests can get default web route success" duration="0.002">
     </testCase>
