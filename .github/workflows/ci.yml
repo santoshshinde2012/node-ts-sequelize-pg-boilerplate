@@ -1,12 +1,10 @@
 name: CI
 on:
   push:
-    branches:
-      - main
+    branches: [ "main", "dev" ]
   pull_request:
     types: [opened, synchronize, reopened]
-    branches:
-      - main
+    branches: [ "main", "dev" ]
 
 jobs:
   CI:
@@ -29,10 +27,21 @@ jobs:
       run: npm run build --if-present
     - name: Test
       run: npm run test
-    - name: Test & publish code coverage
+    - name: CodeClimate Scan
       uses: paambaati/codeclimate-action@v6.0.0
       env:
         CC_TEST_REPORTER_ID: ${{ secrets.CC_TOKEN }}
       with:
-        coverageCommand: npm run test
+        coverageLocations: |
+          ${{github.workspace}}/coverage/*.info:lcov  
+          ${{github.workspace}}/coverage/clover.xml:clover  
         debug: true
+    - name: SonarCloud Scan
+      uses: SonarSource/sonarcloud-github-action@master
+      with: 
+        args: >
+          -Dsonar.javascript.lcov.reportPaths=${{github.workspace}}/coverage/lcov.info 
+          -Dsonar.javascript.lcov.reportPaths=${{github.workspace}}/sonar-report.xml
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
