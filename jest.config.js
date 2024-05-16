@@ -10,8 +10,8 @@ module.exports = {
   ],
   collectCoverage: true,
   testEnvironment: 'node',
-  reporters: ['default', ['jest-to-sonar', {
-    outputFile: './coverage/sonar-report.xml',
-  }]],
+  // reporters: ['default', ['jest-to-sonar', {
+  //   outputFile: './coverage/sonar-report.xml',
+  // }]],
   setupFiles: ['dotenv/config']
 };
