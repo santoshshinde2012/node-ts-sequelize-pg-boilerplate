@@ -13,4 +13,5 @@ module.exports = {
   reporters: ['default', ['jest-to-sonar', {
     outputFile: './coverage/sonar-report.xml',
   }]],
+  setupFiles: ['dotenv/config']
 };

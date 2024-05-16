@@ -48,13 +48,12 @@ jobs:
           -Dsonar.sources=.
           -Dsonar.exclusions=**/tests/**/*.ts
           -Dsonar.test.inclusions=**/tests/**/*.ts
-          -Dsonar.coverage.exclusions=**/tests/**/*.ts,/**/src/server.ts,node_modules/*,coverage/lcov-report/*
+          -Dsonar.coverage.exclusions=**/tests/**/*.ts,/**/src/server.ts,node_modules/*,coverage/lcov-report/*,jest.config.js
           -Dsonar.language=ts
           -Dsonar.tests=./tests
           -Dsonar.verbose=false
           -Dsonar.sourceEncoding=UTF-8
           -Dsonar.javascript.lcov.reportPaths=./coverage/lcov.info 
-          -Dsonar.testExecutionReportPaths=./coverage/sonar-report.xml
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
