@@ -45,15 +45,15 @@ jobs:
           -Dsonar.projectKey=santoshshinde2012_node-ts-sequelize-pg-boilerplate
           -Dsonar.projectName=node-ts-sequelize-pg-boilerplate
           -Dsonar.projectVersion=1.0
+          -Dsonar.language=ts
           -Dsonar.sources=.
-          -Dsonar.exclusions=**/tests/**/*.ts
+          -Dsonar.tests=./tests
           -Dsonar.test.inclusions=**/tests/**/*.ts
           -Dsonar.coverage.exclusions=**/tests/**/*.ts,/**/src/server.ts,node_modules/*,coverage/lcov-report/*,jest.config.js
-          -Dsonar.language=ts
-          -Dsonar.tests=./tests
-          -Dsonar.verbose=false
+          -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info 
+          -Dsonar.testExecutionReportPaths=coverage/sonar-report.xml
           -Dsonar.sourceEncoding=UTF-8
-          -Dsonar.javascript.lcov.reportPaths=./coverage/lcov.info 
+          -Dsonar.verbose=false
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

@@ -1,4 +1,4 @@
-FROM postgres:latest
+FROM postgres:16.3
 
 # Install PostGIS extension
 RUN apt-get update \
