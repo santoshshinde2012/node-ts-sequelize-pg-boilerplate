@@ -1,4 +1,4 @@
-import { NextFunction, Request, Response, Router } from 'express';
+import { NextFunction, Request, Response } from 'express';
 import EnquiryController from '../../../../src/components/enquiry/EnquiryController';
 import { EnquiryService } from '../../../../src/components/enquiry/EnquiryService';
 import enquiries from '../../data/enquiry.json';
