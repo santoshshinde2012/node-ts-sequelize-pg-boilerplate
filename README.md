@@ -1,6 +1,27 @@
-# [NodeSeQ](https://blog.santoshshinde.com/how-to-use-sequelize-with-typescript-node-js-and-postgresql-c6ff58a3af76)  [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=santoshshinde2012_node-ts-sequelize-pg-boilerplate&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=santoshshinde2012_node-ts-sequelize-pg-boilerplate)![Github action workflow status](https://github.com/santoshshinde2012/node-ts-sequelize-pg-boilerplate/actions/workflows/ci.yml/badge.svg?branch=main)![CodeQL](https://github.com/santoshshinde2012/node-ts-sequelize-pg-boilerplate/actions/workflows/codeql-analysis.yml/badge.svg?branch=main)![njsscan Analysis](https://github.com/santoshshinde2012/node-ts-sequelize-pg-boilerplate/actions/workflows/njsscan.yml/badge.svg?branch=main)![Maintainability](https://api.codeclimate.com/v1/badges/ad13a11cffa2421a8220/maintainability)![Test Coverage](https://api.codeclimate.com/v1/badges/ad13a11cffa2421a8220/test_coverage)![Snykk](https://snyk.io/test/github/santoshshinde2012/node-ts-sequelize-pg-boilerplate/badge.svg?style=flat-square)
+<h1 align="center"><a href="https://blog.santoshshinde.com/how-to-use-sequelize-with-typescript-node-js-and-postgresql-c6ff58a3af76" target=”_blank”>NodeSeQ</a></h1>
 
-Node boilerplate with secure code analysis and quality checks: **NodeSeQ** is a boilerplate for building Node.js apps using TypeScript and the Sequelize ORM.
+<p align="center">Node boilerplate with secure code analysis and quality checks</p>
+
+<p align="center">
+  <a href="https://sonarcloud.io/project/overview?id=santoshshinde2012_node-ts-sequelize-pg-boilerplate">
+     <img src="https://sonarcloud.io/api/project_badges/measure?project=santoshshinde2012_node-ts-sequelize-pg-boilerplate&metric=alert_status" alt="Quality Gate Status" />
+  </a>
+  <a href="https://github.com/santoshshinde2012/node-ts-sequelize-pg-boilerplate/actions/workflows/ci.yml" target=”_blank”>
+     <img src="https://github.com/santoshshinde2012/node-ts-sequelize-pg-boilerplate/actions/workflows/ci.yml/badge.svg?branch=main" alt="Github action workflow status" />
+  </a>
+  <a href="https://codeclimate.com/github/santoshshinde2012/node-boilerplate/maintainability" target=”_blank”>
+    <img src="https://api.codeclimate.com/v1/badges/0e53f5d93de102b39641/maintainability" alt="maintainability" />
+  </a>
+  <a href="https://codeclimate.com/github/santoshshinde2012/node-boilerplate/test_coverage" target=”_blank”>
+    <img src="https://api.codeclimate.com/v1/badges/0e53f5d93de102b39641/test_coverage" alt="test_coverage" />
+  </a>
+   <a href="https://snyk.io/test/github/santoshshinde2012/node-ts-sequelize-pg-boilerplate" target=”_blank”>
+     <img src="https://snyk.io/test/github/santoshshinde2012/node-ts-sequelize-pg-boilerplate/badge.svg?style=flat-square" alt="" />
+  </a>
+</p>
+
+<p align="center"><b>NodeSeQ</b> is a boilerplate for building Node.js apps using TypeScript and the Sequelize ORM.</p>
+
 
 ![Introductions](https://i.ibb.co/jznhfjw/nodejs-pg.png)
 
