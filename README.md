@@ -32,7 +32,7 @@
     - Easy global environment configuration and error handling
     - Flexible for adding new features
 
-- Contiuous Integration
+- Continuous Integration
     - Added Github Action Workflow
         - [sonarcloud.io](https://sonarcloud.io/summary/new_code?id=santoshshinde2012_node-ts-sequelize-pg-boilerplate)
         - [snyk.io](https://app.snyk.io/org/santoshshinde2012/project/ab175098-8886-4b72-bb5f-dce28d098fc0)
