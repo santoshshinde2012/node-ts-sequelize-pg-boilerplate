@@ -6,7 +6,6 @@ import { RouteDefinition } from '../types/RouteDefinition';
  * Provides services common to all API methods
  */
 export default abstract class BaseController {
-
 	public abstract routes(): RouteDefinition[];
 
 	/**

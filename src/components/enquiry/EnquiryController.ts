@@ -19,17 +19,29 @@ export default class EnquiryController extends BaseController {
 	}
 
 	/**
-	 * The routes method returns an array of route definitions for CRUD operations 
-	 * (GET, POST, PUT, DELETE) on enquiries, 
+	 * The routes method returns an array of route definitions for CRUD operations
+	 * (GET, POST, PUT, DELETE) on enquiries,
 	 * with corresponding handlers bound to the controller instance.
 	 */
 	public routes(): RouteDefinition[] {
 		return [
 			{ path: '/', method: 'get', handler: this.getEnquiries.bind(this) },
-			{ path: '/:id', method: 'get', handler: this.getEnquiry.bind(this) },
-			{ path: '/', method: 'post', handler: this.createEnquiry.bind(this) },
-			{ path: '/:id', method: 'put', handler: this.updateEnquiry.bind(this) },
-			{ path: '/:id', method: 'delete', handler: this.delete.bind(this) }
+			{
+				path: '/:id',
+				method: 'get',
+				handler: this.getEnquiry.bind(this),
+			},
+			{
+				path: '/',
+				method: 'post',
+				handler: this.createEnquiry.bind(this),
+			},
+			{
+				path: '/:id',
+				method: 'put',
+				handler: this.updateEnquiry.bind(this),
+			},
+			{ path: '/:id', method: 'delete', handler: this.delete.bind(this) },
 		];
 	}
 

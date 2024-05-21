@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "lib": ["es2018"],
-    "target": "es2018",
+    "lib": ["es2021"],
+    "target": "es2021",
     "module": "commonjs",
     "moduleResolution": "node",
     "outDir": "./build",
@@ -14,7 +14,7 @@
   "include": [
     "src/**/**/*.ts",
     "src/**/*.ts",
-    "index.js",
+    "index.js"
   ],
   "exclude": [
     "node_modules"
