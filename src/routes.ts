@@ -4,18 +4,18 @@ import SystemStatusController from './components/system-status/SystemStatusContr
 import { RouteDefinition } from './types/RouteDefinition';
 
 /**
- * 
- * The registerControllerRoutes function creates an Express Router instance and 
+ *
+ * The registerControllerRoutes function creates an Express Router instance and
  * maps route definitions to corresponding HTTP methods
- * such as GET, POST, PUT, PATCH, and DELETE, with their respective handlers. 
+ * such as GET, POST, PUT, PATCH, and DELETE, with their respective handlers.
  * It then returns the configured router.
- * @param routes 
- * @returns 
+ * @param routes
+ * @returns
  */
 
 function registerControllerRoutes(routes: RouteDefinition[]): Router {
 	const controllerRouter = Router();
-	routes.forEach(route => {
+	routes.forEach((route) => {
 		switch (route.method) {
 			case 'get':
 				controllerRouter.get(route.path, route.handler);
@@ -49,13 +49,14 @@ export default function registerRoutes(): Router {
 	// Define an array of controller objects
 	const controllers = [new SystemStatusController(), new EnquiryController()];
 
-
 	// Dynamically register routes for each controller
 	controllers.forEach((controller) => {
 		// make sure each controller has basePath attribute and routes() method
-		router.use(`/v1/${controller.basePath}`, registerControllerRoutes(controller.routes()));
+		router.use(
+			`/v1/${controller.basePath}`,
+			registerControllerRoutes(controller.routes()),
+		);
 	});
 
 	return router;
 }
-

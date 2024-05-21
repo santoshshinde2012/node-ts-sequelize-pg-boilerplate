@@ -9,11 +9,11 @@
   <a href="https://github.com/santoshshinde2012/node-ts-sequelize-pg-boilerplate/actions/workflows/ci.yml" target=”_blank”>
      <img src="https://github.com/santoshshinde2012/node-ts-sequelize-pg-boilerplate/actions/workflows/ci.yml/badge.svg?branch=main" alt="Github action workflow status" />
   </a>
-  <a href="https://codeclimate.com/github/santoshshinde2012/node-boilerplate/maintainability" target=”_blank”>
-    <img src="https://api.codeclimate.com/v1/badges/0e53f5d93de102b39641/maintainability" alt="maintainability" />
+  <a href="https://codeclimate.com/github/santoshshinde2012/node-ts-sequelize-pg-boilerplate/maintainability" target=”_blank”>
+    <img src="https://api.codeclimate.com/v1/badges/ad13a11cffa2421a8220/maintainability" alt="maintainability" />
   </a>
-  <a href="https://codeclimate.com/github/santoshshinde2012/node-boilerplate/test_coverage" target=”_blank”>
-    <img src="https://api.codeclimate.com/v1/badges/0e53f5d93de102b39641/test_coverage" alt="test_coverage" />
+  <a href="https://codeclimate.com/github/santoshshinde2012/node-ts-sequelize-pg-boilerplate/test_coverage" target=”_blank”>
+    <img src="https://api.codeclimate.com/v1/badges/ad13a11cffa2421a8220/test_coverage" alt="test_coverage" />
   </a>
    <a href="https://snyk.io/test/github/santoshshinde2012/node-ts-sequelize-pg-boilerplate" target=”_blank”>
      <img src="https://snyk.io/test/github/santoshshinde2012/node-ts-sequelize-pg-boilerplate/badge.svg?style=flat-square" alt="" />
