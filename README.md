@@ -120,6 +120,10 @@ The swagger documentation is available at the following url `${host}/docs`:
 
 [http://localhost:8080/docs](http://localhost:8080/docs)
 
+## Wiki 
+
+- [NodeSeQ](https://github.com/santoshshinde2012/node-ts-sequelize-pg-boilerplate/wiki)
+  
 
 ## Refrences 
 - [How to Use Sequelize with TypeScript, Node.js, and PostgreSQL](https://blog.santoshshinde.com/how-to-use-sequelize-with-typescript-node-js-and-postgresql-c6ff58a3af76)
@@ -128,6 +132,7 @@ The swagger documentation is available at the following url `${host}/docs`:
 - [Testing with Jest in TypeScript and Node.js for Beginners](https://blog.santoshshinde.com/beginners-guide-to-testing-jest-with-node-typescript-1f46a1b87dad)
 - [Static Code Analysis for Node.js and TypeScript Project using SonarQube](https://blog.santoshshinde.com/static-code-analysis-for-node-js-and-typescript-project-using-sonarqube-8f90799add06)
 - [Visualization of Node.js Event Emitter](https://blog.santoshshinde.com/visualization-of-node-js-event-emitter-4f7c9fe3a477)
+  
 
 <hr/>
 
