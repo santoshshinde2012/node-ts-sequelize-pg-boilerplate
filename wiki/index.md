@@ -59,8 +59,7 @@
     - Created unit test cases using Jest with 90+ code coverage.
     - Tried to cover positive and negative scenerio
     - Code Coverage Report
-    - Sonar Cloud Scan [nodejs-assessment](https://sonarcloud.io/project/configuration/GitHubActions?id=santoshshinde2012_node-ts-sequelize-pg-boilerplate)
-      ![ Sonar Cloud Scan Report](./assets/sonar.png)
+    - Sonar Cloud Scan
 
 ### Step 1: Setup PostgreSQL and Create Database
 

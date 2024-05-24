@@ -1,7 +1,7 @@
 {
   "name": "nodeseq",
   "version": "1.0.0",
-  "description": "",
+  "description": "Node boilerplate with secure code analysis and quality checks",
   "main": "index.js",
   "scripts": {
     "start": "node build/src/server.js",

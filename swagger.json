@@ -1,659 +1,281 @@
 {
-    "swagger": "2.0",
-    "info": {
-        "description": "Node Typescript Boilerplate for Microservices. Skeleton for Node.js Apps written in TypeScript (with Setup Instructions for ESLint, Prettier, and Husky)",
-        "version": "1.0.0",
-        "title": "Node Boilerplate"
-    },
-    "host": "http://localhost:8080/api/v1",
-    "basePath": "",
-    "tags": [
-        {
-            "name": "node-boilerplate",
-            "description": "Node Typescript Boilerplate"
-        }
-    ],
-    "schemes": [
-        "http",
-        "https"
-    ],
-    "securityDefinitions": {},
-    "produces": [
-        "application/json"
-    ],
-    "paths": {
-		"/organizations": {
-			"get": {
-				"tags": [
-					"organizations"
-				],
-				"summary": "getAll",
-				"responses": {
-					"200": {
-						"description": "Successful response",
-						"content": {
-							"application/json": {}
-						}
-					}
-				}
-			},
-			"post": {
-				"tags": [
-					"organizations"
-				],
-				"summary": "create",
-				"requestBody": {
-					"content": {
-						"application/json": {
-							"schema": {
-								"type": "object",
-								"example": {
-									"name": "Organization 1",
-									"country": "India"
-								}
-							}
-						}
-					}
-				},
-				"responses": {
-					"200": {
-						"description": "Successful response",
-						"content": {
-							"application/json": {}
-						}
-					}
-				}
-			}
-		},
-		"/organizations/{id}": {
-			"get": {
-                "parameters": {
-                    "name": "id",
-                    "required": true
-                },
-				"tags": [
-					"organizations"
-				],
-				"summary": "getById",
-				"responses": {
-					"200": {
-						"description": "Successful response",
-						"content": {
-							"application/json": {}
-						}
-					}
-				}
-			},
-			"put": {
-				"tags": [
-					"organizations"
-				],
-				"summary": "update",
-				"requestBody": {
-					"content": {
-						"application/json": {
-							"schema": {
-								"type": "object",
-								"example": {
-									"name": "Organization 1",
-									"country": "France"
-								}
-							}
-						}
-					}
-				},
-				"responses": {
-					"200": {
-						"description": "Successful response",
-						"content": {
-							"application/json": {}
-						}
-					}
-				}
-			},
-			"delete": {
-				"tags": [
-					"organizations"
-				],
-				"summary": "delete",
-				"responses": {
-					"200": {
-						"description": "Successful response",
-						"content": {
-							"application/json": {}
-						}
-					}
-				}
-			}
-		},
-		"/organizations/7cf916b4-8d04-4235-b47a-47d82169d4f5/properties": {
-			"get": {
-				"tags": [
-					"organizations"
-				],
-				"summary": "getPropertiesByOrganizationId",
-				"responses": {
-					"200": {
-						"description": "Successful response",
-						"content": {
-							"application/json": {}
-						}
-					}
-				}
-			}
-		},
-		"/properties": {
-			"get": {
-				"tags": [
-					"properties"
-				],
-				"summary": "getAll",
-				"responses": {
-					"200": {
-						"description": "Successful response",
-						"content": {
-							"application/json": {}
-						}
-					}
-				}
-			},
-			"post": {
-				"tags": [
-					"properties"
-				],
-				"summary": "create",
-				"requestBody": {
-					"content": {
-						"application/json": {
-							"schema": {
-								"type": "object",
-								"example": {
-									"name": "Organisation 3",
-									"country": "India"
-								}
-							}
-						}
-					}
-				},
-				"responses": {
-					"200": {
-						"description": "Successful response",
-						"content": {
-							"application/json": {}
-						}
-					}
-				}
-			}
-		},
-		"/properties/9c3b18be-e1f8-435e-b70c-f216dfdc312a": {
-			"get": {
-				"tags": [
-					"properties"
-				],
-				"summary": "getById",
-				"responses": {
-					"200": {
-						"description": "Successful response",
-						"content": {
-							"application/json": {}
-						}
-					}
-				}
-			}
-		},
-		"/properties/{id}": {
-			"put": {
-				"tags": [
-					"properties"
-				],
-				"summary": "update",
-				"requestBody": {
-					"content": {
-						"application/json": {
-							"schema": {
-								"type": "object",
-								"example": {
-									"name": "Organisation 3",
-									"country": "France"
-								}
-							}
-						}
-					}
-				},
-				"responses": {
-					"200": {
-						"description": "Successful response",
-						"content": {
-							"application/json": {}
-						}
-					}
-				}
-			},
-			"delete": {
-				"tags": [
-					"properties"
-				],
-				"summary": "delete",
-				"responses": {
-					"200": {
-						"description": "Successful response",
-						"content": {
-							"application/json": {}
-						}
-					}
-				}
-			}
-		},
-		"/regions": {
-			"get": {
-				"tags": [
-					"regions"
-				],
-				"summary": "getAll",
-				"responses": {
-					"200": {
-						"description": "Successful response",
-						"content": {
-							"application/json": {}
-						}
-					}
-				}
-			},
-			"post": {
-				"tags": [
-					"regions"
-				],
-				"summary": "create",
-				"requestBody": {
-					"content": {
-						"application/json": {
-							"schema": {
-								"type": "object",
-								"example": {
-									"name": "Organisation 3",
-									"country": "India"
-								}
-							}
-						}
-					}
-				},
-				"responses": {
-					"200": {
-						"description": "Successful response",
-						"content": {
-							"application/json": {}
-						}
-					}
-				}
-			}
-		},
-		"/regions/9c3b18be-e1f8-435e-b70c-f216dfdc312a": {
-			"get": {
-				"tags": [
-					"regions"
-				],
-				"summary": "getById",
-				"responses": {
-					"200": {
-						"description": "Successful response",
-						"content": {
-							"application/json": {}
-						}
-					}
-				}
-			}
-		},
-		"/regions/{id}": {
-			"put": {
-				"tags": [
-					"regions"
-				],
-				"summary": "update",
-				"requestBody": {
-					"content": {
-						"application/json": {
-							"schema": {
-								"type": "object",
-								"example": {
-									"name": "Organisation 3",
-									"country": "France"
-								}
-							}
-						}
-					}
-				},
-				"responses": {
-					"200": {
-						"description": "Successful response",
-						"content": {
-							"application/json": {}
-						}
-					}
-				}
-			},
-			"delete": {
-				"tags": [
-					"regions"
-				],
-				"summary": "delete",
-				"responses": {
-					"200": {
-						"description": "Successful response",
-						"content": {
-							"application/json": {}
-						}
-					}
-				}
-			}
-		},
-		"/fields": {
-			"get": {
-				"tags": [
-					"fields"
-				],
-				"summary": "getAll",
-				"responses": {
-					"200": {
-						"description": "Successful response",
-						"content": {
-							"application/json": {}
-						}
-					}
-				}
-			},
-			"post": {
-				"tags": [
-					"fields"
-				],
-				"summary": "create",
-				"requestBody": {
-					"content": {
-						"application/json": {
-							"schema": {
-								"type": "object",
-								"example": {
-									"name": "Organisation 3",
-									"country": "India"
-								}
-							}
-						}
-					}
-				},
-				"responses": {
-					"200": {
-						"description": "Successful response",
-						"content": {
-							"application/json": {}
-						}
-					}
-				}
-			}
-		},
-		"/fields/9c3b18be-e1f8-435e-b70c-f216dfdc312a": {
-			"get": {
-				"tags": [
-					"fields"
-				],
-				"summary": "getById",
-				"responses": {
-					"200": {
-						"description": "Successful response",
-						"content": {
-							"application/json": {}
-						}
-					}
-				}
-			}
-		},
-		"/fields/{id}": {
-			"put": {
-				"tags": [
-					"fields"
-				],
-				"summary": "update",
-				"requestBody": {
-					"content": {
-						"application/json": {
-							"schema": {
-								"type": "object",
-								"example": {
-									"name": "Organisation 3",
-									"country": "France"
-								}
-							}
-						}
-					}
-				},
-				"responses": {
-					"200": {
-						"description": "Successful response",
-						"content": {
-							"application/json": {}
-						}
-					}
-				}
-			},
-			"delete": {
-				"tags": [
-					"fields"
-				],
-				"summary": "delete",
-				"responses": {
-					"200": {
-						"description": "Successful response",
-						"content": {
-							"application/json": {}
-						}
-					}
-				}
-			}
-		},
-		"/crops": {
-			"get": {
-				"tags": [
-					"crops"
-				],
-				"summary": "getAll",
-				"responses": {
-					"200": {
-						"description": "Successful response",
-						"content": {
-							"application/json": {}
-						}
-					}
-				}
-			},
-			"post": {
-				"tags": [
-					"crops"
-				],
-				"summary": "create",
-				"requestBody": {
-					"content": {
-						"application/json": {
-							"schema": {
-								"type": "object",
-								"example": {
-									"name": "Organisation 3",
-									"country": "India"
-								}
-							}
-						}
-					}
-				},
-				"responses": {
-					"200": {
-						"description": "Successful response",
-						"content": {
-							"application/json": {}
-						}
-					}
-				}
-			}
-		},
-		"/crops/9c3b18be-e1f8-435e-b70c-f216dfdc312a": {
-			"get": {
-				"tags": [
-					"crops"
-				],
-				"summary": "getById",
-				"responses": {
-					"200": {
-						"description": "Successful response",
-						"content": {
-							"application/json": {}
-						}
-					}
-				}
-			}
-		},
-		"/crops/{id}": {
-			"put": {
-				"tags": [
-					"crops"
-				],
-				"summary": "update",
-				"requestBody": {
-					"content": {
-						"application/json": {
-							"schema": {
-								"type": "object",
-								"example": {
-									"name": "Organisation 3",
-									"country": "France"
-								}
-							}
-						}
-					}
-				},
-				"responses": {
-					"200": {
-						"description": "Successful response",
-						"content": {
-							"application/json": {}
-						}
-					}
-				}
-			},
-			"delete": {
-				"tags": [
-					"crops"
-				],
-				"summary": "delete",
-				"responses": {
-					"200": {
-						"description": "Successful response",
-						"content": {
-							"application/json": {}
-						}
-					}
-				}
-			}
-		},
-		"/crop-cycles": {
-			"get": {
-				"tags": [
-					"crop-cycles"
-				],
-				"summary": "getAll",
-				"responses": {
-					"200": {
-						"description": "Successful response",
-						"content": {
-							"application/json": {}
-						}
-					}
-				}
-			},
-			"post": {
-				"tags": [
-					"crop-cycles"
-				],
-				"summary": "create",
-				"requestBody": {
-					"content": {
-						"application/json": {
-							"schema": {
-								"type": "object",
-								"example": {
-									"name": "Organisation 3",
-									"country": "India"
-								}
-							}
-						}
-					}
-				},
-				"responses": {
-					"200": {
-						"description": "Successful response",
-						"content": {
-							"application/json": {}
-						}
-					}
-				}
-			}
-		},
-		"/crop-cycles/9c3b18be-e1f8-435e-b70c-f216dfdc312a": {
-			"get": {
-				"tags": [
-					"crop-cycles"
-				],
-				"summary": "getById",
-				"responses": {
-					"200": {
-						"description": "Successful response",
-						"content": {
-							"application/json": {}
-						}
-					}
-				}
-			}
-		},
-		"/crop-cycles/{id}": {
-			"put": {
-				"tags": [
-					"crop-cycles"
-				],
-				"summary": "update",
-				"requestBody": {
-					"content": {
-						"application/json": {
-							"schema": {
-								"type": "object",
-								"example": {
-									"name": "Organisation 3",
-									"country": "France"
-								}
-							}
-						}
-					}
-				},
-				"responses": {
-					"200": {
-						"description": "Successful response",
-						"content": {
-							"application/json": {}
-						}
-					}
-				}
-			},
-			"delete": {
-				"tags": [
-					"crop-cycles"
-				],
-				"summary": "delete",
-				"responses": {
-					"200": {
-						"description": "Successful response",
-						"content": {
-							"application/json": {}
-						}
-					}
-				}
-			}
-		}
-	},
-    "externalDocs": {
-        "description": "Find out more about Node Typescript Boilerplate"
+    "collection": {
+        "info": {
+            "_postman_id": "12e0cb07-b34f-4110-9b0d-00bad75fdde5",
+            "name": "nodeseq",
+            "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+            "updatedAt": "2024-05-24T13:03:36.000Z",
+            "uid": "10883620-12e0cb07-b34f-4110-9b0d-00bad75fdde5",
+            "createdAt": "2024-03-07T18:00:11.000Z",
+            "lastUpdatedBy": "10883620"
+        },
+        "item": [
+            {
+                "name": "system",
+                "item": [
+                    {
+                        "name": "info",
+                        "id": "7d1e2d1e-2283-40c3-82a6-cdb18bd5047c",
+                        "protocolProfileBehavior": {
+                            "disableBodyPruning": true
+                        },
+                        "request": {
+                            "method": "GET",
+                            "header": [],
+                            "url": {
+                                "raw": "{{BASE_URL}}/system/info",
+                                "host": [
+                                    "{{BASE_URL}}"
+                                ],
+                                "path": [
+                                    "system",
+                                    "info"
+                                ]
+                            }
+                        },
+                        "response": [],
+                        "uid": "10883620-7d1e2d1e-2283-40c3-82a6-cdb18bd5047c"
+                    },
+                    {
+                        "name": "time",
+                        "id": "15903517-dc9b-4fef-be5c-3d27eee06604",
+                        "protocolProfileBehavior": {
+                            "disableBodyPruning": true
+                        },
+                        "request": {
+                            "method": "GET",
+                            "header": [],
+                            "url": {
+                                "raw": "{{BASE_URL}}/system/time",
+                                "host": [
+                                    "{{BASE_URL}}"
+                                ],
+                                "path": [
+                                    "system",
+                                    "time"
+                                ]
+                            }
+                        },
+                        "response": [],
+                        "uid": "10883620-15903517-dc9b-4fef-be5c-3d27eee06604"
+                    },
+                    {
+                        "name": "usage",
+                        "id": "08442eea-bb6d-49ce-b7ad-cdc03ed52dce",
+                        "protocolProfileBehavior": {
+                            "disableBodyPruning": true
+                        },
+                        "request": {
+                            "method": "GET",
+                            "header": [],
+                            "url": {
+                                "raw": "{{BASE_URL}}/system/usage",
+                                "host": [
+                                    "{{BASE_URL}}"
+                                ],
+                                "path": [
+                                    "system",
+                                    "usage"
+                                ]
+                            }
+                        },
+                        "response": [],
+                        "uid": "10883620-08442eea-bb6d-49ce-b7ad-cdc03ed52dce"
+                    },
+                    {
+                        "name": "process",
+                        "id": "17857fe9-ae76-46ed-828d-8a87110735e6",
+                        "protocolProfileBehavior": {
+                            "disableBodyPruning": true
+                        },
+                        "request": {
+                            "method": "GET",
+                            "header": [],
+                            "url": {
+                                "raw": "{{BASE_URL}}/system/process",
+                                "host": [
+                                    "{{BASE_URL}}"
+                                ],
+                                "path": [
+                                    "system",
+                                    "process"
+                                ]
+                            }
+                        },
+                        "response": [],
+                        "uid": "10883620-17857fe9-ae76-46ed-828d-8a87110735e6"
+                    }
+                ],
+                "id": "8bf83b99-4351-4498-a014-56d4a2b4ea6c",
+                "uid": "10883620-8bf83b99-4351-4498-a014-56d4a2b4ea6c"
+            },
+            {
+                "name": "enquiry",
+                "item": [
+                    {
+                        "name": "list",
+                        "id": "9d079151-c75f-46c8-a21c-f8eb031a1802",
+                        "protocolProfileBehavior": {
+                            "disableBodyPruning": true
+                        },
+                        "request": {
+                            "method": "GET",
+                            "header": [],
+                            "url": {
+                                "raw": "{{BASE_URL}}/enquiries",
+                                "host": [
+                                    "{{BASE_URL}}"
+                                ],
+                                "path": [
+                                    "enquiries"
+                                ]
+                            }
+                        },
+                        "response": [],
+                        "uid": "10883620-9d079151-c75f-46c8-a21c-f8eb031a1802"
+                    },
+                    {
+                        "name": "getById",
+                        "id": "61f7a294-a43f-47bf-9e3e-1881820cd303",
+                        "protocolProfileBehavior": {
+                            "disableBodyPruning": true
+                        },
+                        "request": {
+                            "method": "GET",
+                            "header": [],
+                            "url": {
+                                "raw": "{{BASE_URL}}/enquiries/360d09cd-6d23-4e47-a407-58e797fa9a68",
+                                "host": [
+                                    "{{BASE_URL}}"
+                                ],
+                                "path": [
+                                    "enquiries",
+                                    "360d09cd-6d23-4e47-a407-58e797fa9a68"
+                                ]
+                            }
+                        },
+                        "response": [],
+                        "uid": "10883620-61f7a294-a43f-47bf-9e3e-1881820cd303"
+                    },
+                    {
+                        "name": "update",
+                        "id": "f628d19a-e394-42eb-a458-4e563125bae6",
+                        "protocolProfileBehavior": {
+                            "disableBodyPruning": true
+                        },
+                        "request": {
+                            "method": "PUT",
+                            "header": [],
+                            "body": {
+                                "mode": "raw",
+                                "raw": "{\n   \"id\": \"360d09cd-6d23-4e47-a407-58e797fa9a68\",\n    \"name\": \"Santosh Shinde\",\n    \"country\": \"Indai\",\n    \"subject\": \"Enquiry Demo 3\",\n    \"body\": \"Dummy Enquiry. 2\",\n    \"email\": \"sanshinde@gmail.com\"\n}",
+                                "options": {
+                                    "raw": {
+                                        "language": "json"
+                                    }
+                                }
+                            },
+                            "url": {
+                                "raw": "{{BASE_URL}}/enquiries/360d09cd-6d23-4e47-a407-58e797fa9a68",
+                                "host": [
+                                    "{{BASE_URL}}"
+                                ],
+                                "path": [
+                                    "enquiries",
+                                    "360d09cd-6d23-4e47-a407-58e797fa9a68"
+                                ]
+                            }
+                        },
+                        "response": [],
+                        "uid": "10883620-f628d19a-e394-42eb-a458-4e563125bae6"
+                    },
+                    {
+                        "name": "delete",
+                        "id": "328c6f88-568f-462a-8c48-5a902def6ed6",
+                        "protocolProfileBehavior": {
+                            "disableBodyPruning": true
+                        },
+                        "request": {
+                            "method": "DELETE",
+                            "header": [],
+                            "url": {
+                                "raw": "{{BASE_URL}}/enquiries/360d09cd-6d23-4e47-a407-58e797fa9a68",
+                                "host": [
+                                    "{{BASE_URL}}"
+                                ],
+                                "path": [
+                                    "enquiries",
+                                    "360d09cd-6d23-4e47-a407-58e797fa9a68"
+                                ]
+                            }
+                        },
+                        "response": [],
+                        "uid": "10883620-328c6f88-568f-462a-8c48-5a902def6ed6"
+                    },
+                    {
+                        "name": "create",
+                        "id": "279ee917-d4bc-490b-8320-a3bf2b09e2d5",
+                        "protocolProfileBehavior": {
+                            "disableBodyPruning": true
+                        },
+                        "request": {
+                            "method": "POST",
+                            "header": [],
+                            "body": {
+                                "mode": "raw",
+                                "raw": "{\n    \"name\": \"Santosh Shinde\",\n    \"country\": \"Indai\",\n    \"subject\": \"Enquiry Demo 2\",\n    \"body\": \"Dummy Enquiry. 2\",\n    \"email\": \"sanshinde@gmail.com\"\n}",
+                                "options": {
+                                    "raw": {
+                                        "language": "json"
+                                    }
+                                }
+                            },
+                            "url": {
+                                "raw": "{{BASE_URL}}/enquiries",
+                                "host": [
+                                    "{{BASE_URL}}"
+                                ],
+                                "path": [
+                                    "enquiries"
+                                ]
+                            }
+                        },
+                        "response": [],
+                        "uid": "10883620-279ee917-d4bc-490b-8320-a3bf2b09e2d5"
+                    }
+                ],
+                "id": "e9a7e6bd-5351-485d-b42b-b9bd27e74659",
+                "uid": "10883620-e9a7e6bd-5351-485d-b42b-b9bd27e74659"
+            }
+        ],
+        "event": [
+            {
+                "listen": "prerequest",
+                "script": {
+                    "id": "766b94be-b43c-4cd5-a0e6-b8cca01c63ad",
+                    "type": "text/javascript",
+                    "exec": [
+                        ""
+                    ]
+                }
+            },
+            {
+                "listen": "test",
+                "script": {
+                    "id": "c581f8aa-1032-4553-ac1b-e7f494e399a0",
+                    "type": "text/javascript",
+                    "exec": [
+                        ""
+                    ]
+                }
+            }
+        ],
+        "variable": [
+            {
+                "key": "BASE_URL",
+                "value": "http://localhost:8080/api/v1",
+                "type": "string"
+            }
+        ]
     }
 }
