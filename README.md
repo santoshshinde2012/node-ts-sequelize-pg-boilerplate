@@ -23,7 +23,7 @@
 <p align="center"><b>NodeSeQ</b> is a boilerplate for building Node.js apps using TypeScript and the Sequelize ORM.</p>
 
 
-![Introductions](https://i.ibb.co/jznhfjw/nodejs-pg.png)
+![Introductions](wiki/assets/introductions.png)
 
 ## Common Features
 
