@@ -5,14 +5,14 @@ dotenv.config({
 	path: path.join(__dirname, '../../.env'),
 });
 
-type DbConnection = {
+interface DbConnection {
 	host: string;
 	port: number;
 	user: string;
 	password: string;
 	database: string;
 	dbLogging: boolean;
-};
+}
 
 const connection: DbConnection = {
 	host: process.env.DB_HOST,

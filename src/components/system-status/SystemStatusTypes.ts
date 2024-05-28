@@ -66,9 +66,7 @@ export interface INodeJsProcessVersions {
 	openssl: string;
 }
 
-export interface INodeJsProcessEnv {
-	[key: string]: string | undefined;
-}
+export type INodeJsProcessEnv = Record<string, string | undefined>;
 
 export interface IProcessInfoResponse {
 	procCpu: INodeJsCpuUsage;
@@ -97,7 +95,7 @@ export interface IOsInformation {
 
 export interface ISystemInfoResponse {
 	cpus: INodeJsCpuInfo[];
-	network: { [index: string]: INodeJsNetworkInterfaceInfo[] };
+	network: Record<string, INodeJsNetworkInterfaceInfo[]>;
 	os: IOsInformation;
 	currentUser: IUserInfo;
 }

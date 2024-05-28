@@ -1,5 +1,5 @@
 import cors from 'cors';
-import express, { Application, Request, Response } from 'express';
+import express, { Application, Request, Response, NextFunction } from 'express';
 import http from 'http';
 import helmet from 'helmet';
 import 'dotenv/config';
@@ -72,7 +72,7 @@ export default class App {
 	private parseRequestHeader(
 		_req: Request,
 		_res: Response,
-		next: Function,
+		next: NextFunction,
 	): void {
 		// parse request header
 		// console.log(req.headers.access_token);
