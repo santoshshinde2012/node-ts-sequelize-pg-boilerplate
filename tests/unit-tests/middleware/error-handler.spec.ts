@@ -6,7 +6,7 @@ import { StatusCodes } from 'http-status-codes';
 describe('ErrorHandler middleware', () => {
 	let mockRequest: Partial<Request>;
 	let mockResponse: Partial<Response>;
-	let nextFunction: NextFunction = jest.fn();
+	const nextFunction: NextFunction = jest.fn();
 
 	beforeEach(() => {
 		mockRequest = {};
@@ -39,7 +39,7 @@ describe('ErrorHandler middleware', () => {
 	});
 
 	test('with 200 status code', async () => {
-		const status: number = 200;
+		const status = 200;
 		addErrorHandler(
 			{
 				status,
@@ -60,8 +60,8 @@ describe('ErrorHandler middleware', () => {
 		expect(mockResponse.status).toHaveBeenCalledWith(status);
 	});
 
-	test('with 200 status code', async () => {
-		const status: number = 200;
+	test('addErrorHandler with 200 status code', async () => {
+		const status = 200;
 		addErrorHandler(
 			{
 				status,
@@ -85,7 +85,7 @@ describe('ErrorHandler middleware', () => {
 	test('with 200 status code and updated env variables', async () => {
 		process.env.APPLY_ENCRYPTION = 'true';
 		process.env.SECRET_KEY = 'key';
-		const status: number = 200;
+		const status = 200;
 		addErrorHandler(
 			{
 				status,

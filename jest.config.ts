@@ -1,4 +1,6 @@
-module.exports = {
+import type { Config } from 'jest';
+
+const config: Config = {
   verbose: true,
   preset: 'ts-jest',
   roots: [
@@ -15,3 +17,5 @@ module.exports = {
   }]],
   setupFiles: ['dotenv/config']
 };
+
+export default config;

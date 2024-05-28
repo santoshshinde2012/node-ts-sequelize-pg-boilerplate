@@ -4,7 +4,7 @@ import SystemStatusController from '../../../../src/components/system-status/Sys
 describe('System Status Controller', () => {
 	let request: Partial<Request>;
 	let response: Partial<Response>;
-	let next: NextFunction = jest.fn();
+	const next: NextFunction = jest.fn();
 	let controller: SystemStatusController;
 
 	beforeAll(() => {
@@ -20,12 +20,12 @@ describe('System Status Controller', () => {
 		};
 	});
 
-	test('test getError method', () => {
+	test('getError method', () => {
 		controller.getError(request as Request, response as Response, next);
 		expect(next).toHaveBeenCalled();
 	});
 
-	test('test getSystemInfo method', () => {
+	test('getSystemInfo method', () => {
 		controller.getSystemInfo(
 			request as Request,
 			response as Response,
@@ -35,7 +35,7 @@ describe('System Status Controller', () => {
 		expect(locals?.data).toHaveProperty('os');
 	});
 
-	test('test getServerTime method', () => {
+	test('getServerTime method', () => {
 		controller.getServerTime(
 			request as Request,
 			response as Response,
@@ -46,7 +46,7 @@ describe('System Status Controller', () => {
 		expect(locals?.data).toHaveProperty('utc');
 	});
 
-	test('test getResourceUsage method', () => {
+	test('getResourceUsage method', () => {
 		controller.getResourceUsage(
 			request as Request,
 			response as Response,
@@ -57,7 +57,7 @@ describe('System Status Controller', () => {
 		expect(locals?.data).toHaveProperty('systemMemory');
 	});
 
-	test('test getProcessInfo method', () => {
+	test('getProcessInfo method', () => {
 		controller.getProcessInfo(
 			request as Request,
 			response as Response,

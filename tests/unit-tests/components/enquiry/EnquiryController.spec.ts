@@ -10,7 +10,7 @@ import { RouteDefinition } from '../../../../src/types/RouteDefinition';
 describe('Enquiry Controller', () => {
 	let request: Partial<Request>;
 	let response: Partial<Response>;
-	let next: NextFunction = jest.fn();
+	const next: NextFunction = jest.fn();
 	let controller: EnquiryController;
 
 	beforeAll(() => {
@@ -83,7 +83,7 @@ describe('Enquiry Controller', () => {
 		expect(locals?.data).toBeDefined();
 	});
 
-	it('should handle errors to get all enquiries', async () => {
+	it('should handle errors to get enquiry by id', async () => {
 		const error = new Error('Internal Server Error');
 		const getById = jest.spyOn(EnquiryService.prototype, 'getById');
 		getById.mockRejectedValueOnce(error);

@@ -10,7 +10,7 @@ interface EnquiryAttributes {
 	country: string;
 }
 
-interface EnquiryCreationAttributes extends Optional<EnquiryAttributes, 'id'> {}
+type EnquiryCreationAttributes = Optional<EnquiryAttributes, 'id'>;
 
 class Enquiry
 	extends Model<EnquiryAttributes, EnquiryCreationAttributes>

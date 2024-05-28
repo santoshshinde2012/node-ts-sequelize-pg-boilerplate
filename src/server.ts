@@ -15,7 +15,7 @@ function serverError(error: NodeJS.ErrnoException): void {
 }
 
 function serverListening(): void {
-	const addressInfo: AddressInfo = <AddressInfo>server.address();
+	const addressInfo: AddressInfo = server.address() as AddressInfo;
 	logger.info(
 		`Listening on ${addressInfo.address}:${process.env.PORT || 8080}`,
 	);

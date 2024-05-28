@@ -11,7 +11,7 @@ import { RouteDefinition } from '../../types/RouteDefinition';
  */
 export default class EnquiryController extends BaseController {
 	private enquiry: EnquiryService;
-	public basePath: string = 'enquiries';
+	public basePath = 'enquiries';
 
 	constructor() {
 		super();
