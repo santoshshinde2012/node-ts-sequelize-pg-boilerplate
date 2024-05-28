@@ -63,7 +63,7 @@
 - [x] `cors`
 - [x] `helmet`
 - [x] `http-status-codes`
-- [x] `winston`, `@types/winston`
+- [x] `winston`
 - [x] `sequelize`, `pg`, `pg-hstore`
 
 ## Start The application in Development Mode
