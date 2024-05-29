@@ -18,10 +18,10 @@
    <a href="https://snyk.io/test/github/santoshshinde2012/node-ts-sequelize-pg-boilerplate" target=”_blank”>
      <img src="https://snyk.io/test/github/santoshshinde2012/node-ts-sequelize-pg-boilerplate/badge.svg?style=flat-square" alt="" />
   </a>
+  <a href="https://libraries.io/github/santoshshinde2012/node-ts-sequelize-pg-boilerplate" target=”_blank”>
+     <img src="https://img.shields.io/librariesio/github/santoshshinde2012/node-ts-sequelize-pg-boilerplate" alt="" />
+  </a>
 </p>
-
-<p align="center"><b>NodeSeQ</b> is a boilerplate for building Node.js apps using TypeScript and the Sequelize ORM.</p>
-
 
 ![Introductions](wiki/assets/introductions.png)
 
