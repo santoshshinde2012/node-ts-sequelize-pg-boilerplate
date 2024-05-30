@@ -108,8 +108,6 @@
 | **tests/integration-tests/**      | API routes (Integration) Test cases will be placed here|
 
 
-
-
 ## Postman Collections
 
 The [Postman Collections](https://elements.getpostman.com/redirect?entityId=10883620-12e0cb07-b34f-4110-9b0d-00bad75fdde5&entityType=collection) is available in public workspace.
