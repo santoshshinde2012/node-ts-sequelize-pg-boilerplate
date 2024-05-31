@@ -108,8 +108,6 @@
 | **tests/integration-tests/**      | API routes (Integration) Test cases will be placed here|
 
 
-
-
 ## Postman Collections
 
 The [Postman Collections](https://elements.getpostman.com/redirect?entityId=10883620-12e0cb07-b34f-4110-9b0d-00bad75fdde5&entityType=collection) is available in public workspace.
@@ -132,7 +130,8 @@ The swagger documentation is available at the following url `${host}/docs`:
 - [Testing with Jest in TypeScript and Node.js for Beginners](https://blog.santoshshinde.com/beginners-guide-to-testing-jest-with-node-typescript-1f46a1b87dad)
 - [Static Code Analysis for Node.js and TypeScript Project using SonarQube](https://blog.santoshshinde.com/static-code-analysis-for-node-js-and-typescript-project-using-sonarqube-8f90799add06)
 - [Visualization of Node.js Event Emitter](https://blog.santoshshinde.com/visualization-of-node-js-event-emitter-4f7c9fe3a477)
-  
+- [NodeSeQ Demo](https://youtu.be/qyI0E_yYQik?si=KNFfqB1h7_ZlqAi0)  
+
 
 <hr/>
 
