@@ -37,7 +37,7 @@
     "winston": "^3.13.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.4.0",
+    "@eslint/js": "^9.5.0",
     "@types/cors": "^2.8.17",
     "@types/jest": "^29.5.12",
     "@types/supertest": "^6.0.2",
