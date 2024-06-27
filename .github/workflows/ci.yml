@@ -19,6 +19,16 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
+    - name: Get Branch
+      id: branch-names
+      uses: ./
+    - name: Show output
+      run: |
+        echo "Default Branch: ${{ steps.branch-names.outputs.default_branch }}"
+        echo "Current Branch: ${{ steps.branch-names.outputs.current_branch }}"
+        echo "Base Ref: ${{ steps.branch-names.outputs.base_ref_branch }}"
+        echo "Head Ref: ${{ steps.branch-names.outputs.head_ref_branch }}"
+        echo "Ref: ${{ steps.branch-names.outputs.ref_branch }}"
     - name: Clean Cache
       run: npm cache clean --force
     - name: Install package
