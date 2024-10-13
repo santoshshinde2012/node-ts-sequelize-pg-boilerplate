@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "afff79dc-7ec7-4094-a545-d13f927c2e23",
+		"name": "OAuth2 Identity Server",
+		"description": "Postman Collection for testing OAuth2 Identity Server APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10883620"
+	},
+	"item": [
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "user1"
+						},
+						{
+							"key": "password",
+							"value": "password1"
+						},
+						{
+							"key": "email",
+							"value": "sanshinde2012@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "india",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "santosh shinde",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{HOST}}/api/v1/auth/register",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "user1"
+						},
+						{
+							"key": "password",
+							"value": "password1"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{HOST}}/api/v1/auth/login",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authorize",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/api/v1/auth/authorize?response_type=code&client_id=48687ac8d3fb4c928bfe3bf6f38c2524&redirect_uri=http://localhost:8082/api/v1/auth/callback&state=teststate",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"authorize"
+					],
+					"query": [
+						{
+							"key": "response_type",
+							"value": "code"
+						},
+						{
+							"key": "client_id",
+							"value": "48687ac8d3fb4c928bfe3bf6f38c2524"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "http://localhost:8082/api/v1/auth/callback"
+						},
+						{
+							"key": "state",
+							"value": "teststate"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "authorization_code"
+						},
+						{
+							"key": "code",
+							"value": "8d50d114-3ba1-4e61-beae-e7f712a8940c"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "http://localhost:8082/api/v1/auth/callback"
+						},
+						{
+							"key": "client_id",
+							"value": "48687ac8d3fb4c928bfe3bf6f38c2524"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{HOST}}/api/v1/auth/token",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyMSIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUiLCJpYXQiOjE3Mjg4MTQ4OTcsImV4cCI6MTcyODgxODQ5N30.VWmLgDx0Ww5rZBclg2XAKzGnnziBMPLSmdqu3_Hicas"
+					}
+				],
+				"url": {
+					"raw": "{{HOST}}/api/v1/auth/userinfo",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"userinfo"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "HOST",
+			"value": "http://localhost:8082",
+			"type": "string"
+		}
+	]
+}
