@@ -9,4 +9,4 @@ RUN apt-get update \
 COPY init.sql /docker-entrypoint-initdb.d/
 
 # Enable PostGIS extension
-RUN echo "CREATE EXTENSION IF NOT EXISTS postgis;" >> /docker-entrypoint-initdb.d/init.sql
+# RUN echo "CREATE EXTENSION IF NOT EXISTS postgis;" >> /docker-entrypoint-initdb.d/init.sql

@@ -9,6 +9,7 @@ import swaggerDocument from '../swagger.json';
 import registerRoutes from './routes';
 import addErrorHandler from './middleware/error-handler';
 import logger from './lib/logger';
+import session from 'express-session';
 
 export default class App {
 	public express: Application;
@@ -57,6 +58,13 @@ export default class App {
 		this.express.use(express.json({ limit: '100mb' }));
 		this.express.use(
 			express.urlencoded({ limit: '100mb', extended: true }),
+		);
+		this.express.use(
+			session({
+				secret: process.env.SESSION_SECRET,
+				resave: false,
+				saveUninitialized: false,
+			}),
 		);
 		// add multiple cors options as per your use
 		const corsOptions = {

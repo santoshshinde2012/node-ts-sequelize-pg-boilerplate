@@ -3,6 +3,8 @@ import EnquiryController from './components/enquiry/EnquiryController';
 import SystemStatusController from './components/system-status/SystemStatusController';
 import { RouteDefinition } from './types/RouteDefinition';
 import logger from './lib/logger';
+import UserController from './components/user/UserController';
+import OAuth2Controller from './auth';
 
 /**
  *
@@ -51,7 +53,9 @@ export default function registerRoutes(): Router {
 		// Define an array of controller objects
 		const controllers = [
 			new SystemStatusController(),
+			new OAuth2Controller(),
 			new EnquiryController(),
+			new UserController()
 		];
 
 		// Dynamically register routes for each controller
