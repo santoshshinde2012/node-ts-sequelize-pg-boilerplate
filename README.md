@@ -1,4 +1,4 @@
-<h1 align="center"><a href="https://blog.santoshshinde.com/how-to-use-sequelize-with-typescript-node-js-and-postgresql-c6ff58a3af76" target=”_blank”>NodeSeQ</a></h1>
+<h1 align="center"><a href="https://blog.santoshshinde.com/how-to-use-sequelize-with-typescript-node-js-and-postgresql-c6ff58a3af76" target="_blank">NodeSeQ</a></h1>
 
 <p align="center">Node boilerplate with secure code analysis and quality checks</p>
 
@@ -6,19 +6,13 @@
   <a href="https://sonarcloud.io/project/overview?id=santoshshinde2012_node-ts-sequelize-pg-boilerplate">
      <img src="https://sonarcloud.io/api/project_badges/measure?project=santoshshinde2012_node-ts-sequelize-pg-boilerplate&metric=alert_status" alt="Quality Gate Status" />
   </a>
-  <a href="https://github.com/santoshshinde2012/node-ts-sequelize-pg-boilerplate/actions/workflows/ci.yml" target=”_blank”>
+  <a href="https://github.com/santoshshinde2012/node-ts-sequelize-pg-boilerplate/actions/workflows/ci.yml" target="_blank">
      <img src="https://github.com/santoshshinde2012/node-ts-sequelize-pg-boilerplate/actions/workflows/ci.yml/badge.svg?branch=main" alt="Github action workflow status" />
   </a>
-  <a href="https://codeclimate.com/github/santoshshinde2012/node-ts-sequelize-pg-boilerplate/maintainability" target=”_blank”>
-    <img src="https://api.codeclimate.com/v1/badges/ad13a11cffa2421a8220/maintainability" alt="maintainability" />
-  </a>
-  <a href="https://codeclimate.com/github/santoshshinde2012/node-ts-sequelize-pg-boilerplate/test_coverage" target=”_blank”>
-    <img src="https://api.codeclimate.com/v1/badges/ad13a11cffa2421a8220/test_coverage" alt="test_coverage" />
-  </a>
-   <a href="https://snyk.io/test/github/santoshshinde2012/node-ts-sequelize-pg-boilerplate" target=”_blank”>
+   <a href="https://snyk.io/test/github/santoshshinde2012/node-ts-sequelize-pg-boilerplate" target="_blank">
      <img src="https://snyk.io/test/github/santoshshinde2012/node-ts-sequelize-pg-boilerplate/badge.svg?style=flat-square" alt="" />
   </a>
-  <a href="https://libraries.io/github/santoshshinde2012/node-ts-sequelize-pg-boilerplate" target=”_blank”>
+  <a href="https://libraries.io/github/santoshshinde2012/node-ts-sequelize-pg-boilerplate" target="_blank">
      <img src="https://img.shields.io/librariesio/github/santoshshinde2012/node-ts-sequelize-pg-boilerplate" alt="" />
   </a>
 </p>
@@ -39,10 +33,7 @@
         - [CodeQL](https://codeql.github.com/)
         - [njsscan](https://opensecurity.in/#engineering) is a static application testing (SAST) tool that can find insecure code patterns in your node.js applications
         - [Codeclimate](https://codeclimate.com/)
-          - <a href="https://codeclimate.com/github/santoshshinde2012/node-ts-sequelize-pg-boilerplate/maintainability"><img src="https://api.codeclimate.com/v1/badges/ad13a11cffa2421a8220/maintainability" /></a>
-          - <a href="https://codeclimate.com/github/santoshshinde2012/node-ts-sequelize-pg-boilerplate/test_coverage"><img src="https://api.codeclimate.com/v1/badges/ad13a11cffa2421a8220/test_coverage" /></a>
-
-- Documentation Standards
+          -          -- Documentation Standards
     - Swagger documentation support and Postman collections
     - Clear instructions in the readme file
 
